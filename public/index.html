@@ -1,86 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./css/stylef.css">
-    <title>HomePage</title>
-    <script src="./static_scripts/homepageScript.js" defer></script>
+    <link rel="stylesheet" href="/css/hpstyle.css">
+    <title>Homepage</title>
 </head>
-<body>
-    <div class="sidebar">
-        <div class="logo"></div>
-        <ul class="menu">
-            <li class="active">
-            <a href="#">
-                <i class="fas fa-home"></i>
-                <span>Home</span>
-            </a>
-            </li>
-            <li>
-                <a href="../admin-login">
-                    <i class="fas fa-map"></i>
-                    <span>AdminLogin</span>
-                </a>
-            </li>
-            <li>
-            <a href="#">
-                <i class="fas fa-question-circle"></i>
-                <span>About Us</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fas fa-phone"></i>
-                <span>Contact</span>
-            </a>
-        </li>
-    </div>
-    <div class="imgs">
-        <img
-          src="imgs/img-1.png"
-          data-img
-          id="img-1"
-          class="top-section-img show"
-        />
-        <img src="imgs/img-2.png" data-img id="img-2" />
-        <img src="imgs/img-3.png" data-img id="img-3" />
-      </div>
-      <section class="top-section full-screen-section">
-        <div class="left">
-          <h1>Better Crop Solutions</h1>
-          <p>
-             A place for all your farming solutions, fullfilling your dataset requirements
-          </p>
-        </div>
-        <div class="right"></div>
-      </section>
-      <section class="full-screen-section first-main-section">
-        <h1>Centralize Your Agricultural Data</h1>
-        <p>Streamlining all your farming data on one centralized page for all your agricultural needs</p>
-        <div data-img-to-show="#img-1"></div>
-      </section>
-      <section class="full-screen-section">
-        <h1>Ease Of Access</h1>
-        <p>
-         User friendly interface for farmers, simple upload and comment drop box
-        </p>
-        <div data-img-to-show="#img-2"></div>
-      </section>
-      <section class="full-screen-section">
-        <h1>Launch Faster</h1>
-        <p>Logical can get systems to market in minutes instead of weeks.</p>
-        <div data-img-to-show="#img-3"></div>
-      </section>
-      <section>
-        <div class="LoginF">
-            <a href="../log-in" class="loginF">
-            <i class="fas fa-sign-in"></i>
-                <span>Log-in</span>
-            </a>
-        </div>
-      </section>
 
+<body>
+
+    <header>
+        <img src="./assets/images/logo.png" id="logo">
+        <nav>
+            <a href="#main">Home</a>
+            <a href="#profile">User Login</a>
+            <a href="#social">Admin Login</a>
+            <a href="#about">About US</a>
+            <button id="menu">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <div id="container">
+        <section id="main"
+            style="background-image: url(./assets/images/main.jpg);">
+            <h1><a href="" style="text-decoration: none; color: white;">Better Crop</a></h1>
+        </section>
+        <section id="profile"
+            style="background-image: url(./assets/images/user-login.jpg);">
+            <h1><a href="../log-in" style="text-decoration: none; color: white;">User Login</a></h1>
+        </section>
+        <section id="social"
+            style="background-image: url(./assets/images/adminlogin.jpg);">
+            <h1><a href="../adloginpage" style="text-decoration: none; color: white;">Admin Login</a></h1>
+        </section>
+        <section id="about"
+            style="background-image: url(./assets/images/aboutus.jpg);">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus temporibus aut mollitia eveniet
+                tenetur voluptatem animi laudantium? Temporibus cum, labore ipsa vero nemo hic, alias asperiores
+                accusantium eos quos deleniti.</p>
+        </section>
+    </div>
+
+
+    <script src="./static_scripts/hpjasc.js"></script>
 </body>
+
 </html>

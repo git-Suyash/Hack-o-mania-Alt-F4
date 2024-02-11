@@ -24,6 +24,10 @@ app.post("/login",(req,res)=>{    // check from db and validate
     res.sendFile(process.cwd()+"/public/dashb_farmer.html");
 });
 
+app.get('/adloginpage',(req,res)=>{
+    res.sendFile(process.cwd()+"/public/adminlogin.html");
+});
+
 app.post("/register", (req,res) => { 
     app.use(bodyParser.urlencoded({ extended: true }));
     console.log(req.body);
