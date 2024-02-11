@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="./css/dashbfarmstyle.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Farmer Dashboard</title>
+</head>
+
+<body>
+
+	<div class="sidebar">
+		<div class="logo"></div>
+		<ul class="menu">
+			<li class="active">
+				<a href="/">
+					<i class="fas fa-home"></i>
+					<span>Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fas fa-map"></i>
+					<span>Dataset</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fas fa-question-circle"></i>
+					<span>About Us</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fas fa-phone"></i>
+					<span>Contact</span>
+				</a>
+			</li>
+			<li>
+				<a href="/" class="login">
+					<i class="fas fa-sign-in"></i>
+					<span>Log-out</span>
+				</a>
+			</li>
+	</div>
+
+	<div class="container">
+		<form action="/upload" method="post">
+			<input type="file" id="file" accept="image/*" hidden>
+			<div class="img-area" data-img="">
+				<i class='bx bxs-cloud-upload icon'></i>
+				<h3>Upload Image</h3>
+				<p>Image size must be less than <span>5MB</span></p>
+			</div>
+			<button class="select-image">Select Image</button>
+			<h1></h1>
+			<button class="select-image" type="submit">Upload Image</button>
+		</form>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="wrapper">
+		<form action="#">
+			<h3>Enter Your Text</h3>
+			<textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+			<div class="btn-group">
+				<button type="submit" class="btn submit">Submit</button>
+				<button class="btn cancel">Cancel</button>
+			</div>
+		</form>
+	</div>
+
+
+
+
+
+	<script src="./static_scripts/dashbfarmscript.js"></script>
+</body>
+
+</html>

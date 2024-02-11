@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Homepage</title>
+    <link rel="stylesheet" href="./css/stylef.css">
+    <title>HomePage</title>
+    <script src="./static_scripts/homepageScript.js" defer></script>
 </head>
-
 <body>
     <div class="sidebar">
         <div class="logo"></div>
         <ul class="menu">
             <li class="active">
-            <a href="../">
+            <a href="#">
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
             </li>
             <li>
-                <a href="#">
+                <a href="../admin-login">
                     <i class="fas fa-map"></i>
-                    <span>Dataset</span>
+                    <span>AdminLogin</span>
                 </a>
             </li>
             <li>
@@ -37,15 +36,51 @@
                 <span>Contact</span>
             </a>
         </li>
-        <li>
-            <a href="#" class="login">
-                <i class="fas fa-sign-in"></i>
-                <span>Log-out</span>
-            </a>
-        </li>
     </div>
+    <div class="imgs">
+        <img
+          src="imgs/img-1.png"
+          data-img
+          id="img-1"
+          class="top-section-img show"
+        />
+        <img src="imgs/img-2.png" data-img id="img-2" />
+        <img src="imgs/img-3.png" data-img id="img-3" />
+      </div>
+      <section class="top-section full-screen-section">
+        <div class="left">
+          <h1>Better Crop Solutions</h1>
+          <p>
+             A place for all your farming solutions, fullfilling your dataset requirements
+          </p>
+        </div>
+        <div class="right"></div>
+      </section>
+      <section class="full-screen-section first-main-section">
+        <h1>Centralize Your Agricultural Data</h1>
+        <p>Streamlining all your farming data on one centralized page for all your agricultural needs</p>
+        <div data-img-to-show="#img-1"></div>
+      </section>
+      <section class="full-screen-section">
+        <h1>Ease Of Access</h1>
+        <p>
+         User friendly interface for farmers, simple upload and comment drop box
+        </p>
+        <div data-img-to-show="#img-2"></div>
+      </section>
+      <section class="full-screen-section">
+        <h1>Launch Faster</h1>
+        <p>Logical can get systems to market in minutes instead of weeks.</p>
+        <div data-img-to-show="#img-3"></div>
+      </section>
+      <section>
+        <div class="LoginF">
+            <a href="../log-in" class="loginF">
+            <i class="fas fa-sign-in"></i>
+                <span>Log-in</span>
+            </a>
+        </div>
+      </section>
 
-    <a href="../log-in">LOG in</a>
 </body>
-
 </html>

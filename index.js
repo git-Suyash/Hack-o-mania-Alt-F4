@@ -21,7 +21,7 @@ app.post("/login",(req,res)=>{    // check from db and validate
     console.log(req.body);
     // add functionality here
     //app.use(dbSetup);
-    res.sendFile(process.cwd()+"/public/dashboard.html");
+    res.sendFile(process.cwd()+"/public/dashb_farmer.html");
 });
 
 app.post("/register", (req,res) => { 
@@ -30,6 +30,10 @@ app.post("/register", (req,res) => {
     app.use(generateUserId);   // middleware to create user id
     res.redirect('/log-in');
     console.log("registered");
+});
+
+app.get('/admin-login', (req,res)=>{
+    res.sendFile(process.cwd()+"/public/dashboard.html");
 });
 
 app.post("/upload", (req,res) => {   // update to db
