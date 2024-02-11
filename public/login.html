@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo"></div>
+    <ul class="menu">
+        <li class="active">
+        <a href="#">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fas fa-map"></i>
+                <span>Dataset</span>
+            </a>
+        </li>
+        <li>
+        <a href="#">
+            <i class="fas fa-question-circle"></i>
+            <span>About Us</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fas fa-phone"></i>
+            <span>Contact</span>
+        </a>
+    </li>
+    <li>
+        <a href="#" class="login">
+            <i class="fas fa-sign-in"></i>
+            <span>Log-out</span>
+        </a>
+    </li>
+</div>
+</body>
+  <div class="container" id="container">
+    <div class="form-container sign-up">
+        <form action="/register" method="post">
+            <h1>Create Account</h1>
+            <span>or use your email for registeration</span>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="zone" placeholder="Zone">
+            <input type="crop" placeholder="Crop">
+            <input type="phone number" placeholder="Phone Number">
+            <button>Sign Up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in">
+        <form a action="/login" method="post">
+            <h1>Sign In</h1>
+
+            <span>use your given User ID and Password</span>
+            <input type="email" placeholder="User ID">
+            <input type="password" placeholder="Password">
+            <a href="#">Forget Your Password?</a>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+    <div class="toggle-container">
+        <div class="toggle">
+            <div class="toggle-panel toggle-left">
+                <h1>Welcome Back!</h1>
+                <p>Enter your details to login</p>
+                <button class="hidden" id="login" formaction="/login">Sign In</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Hello, User!</h1>
+                <p>Register with your personal details to use all of site features</p>
+                <button class="hidden" id="register">Sign Up</button>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./static_scripts/script.js"></script>
+</body>
+</html>

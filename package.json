@@ -1,0 +1,32 @@
+{
+  "name": "bettercrop.co",
+  "version": "1.0.0",
+  "description": "An end to end site for better crop data collection",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/git-Suyash/Hack-o-mania-Alt-F4.git"
+  },
+  "author": "Suyash Srivastava, Dheeraj Kumar, Aaryan Srivastava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/git-Suyash/Hack-o-mania-Alt-F4/issues"
+  },
+  "homepage": "https://github.com/git-Suyash/Hack-o-mania-Alt-F4#readme",
+  "dependencies": {
+    "@tensorflow-models/mobilenet": "^2.1.1",
+    "@tensorflow/tfjs": "^4.17.0",
+    "@tensorflow/tfjs-backend-cpu": "^4.17.0",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "image-resizer-js": "^1.2.1",
+    "mysql": "github:mysqljs/mysql",
+    "nodemon": "^3.0.3",
+    "tfjs": "^0.6.0"
+  }
+}

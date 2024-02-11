@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Farmer dashboard</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li class="active">
+            <a href="#">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-map"></i>
+                    <span>Dataset</span>
+                </a>
+            </li>
+            <li>
+            <a href="#">
+                <i class="fas fa-question-circle"></i>
+                <span>About Us</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fas fa-phone"></i>
+                <span>Contact</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="login">
+                <i class="fas fa-sign-in"></i>
+                <span>Log-out</span>
+            </a>
+        </li>
+    </div>
+    <form action="/upload" method= "post">
+        <input type="file" id="myimg" name="imgFile">
+        <input type="text" name="comment" id="commentBox">
+        <input type="submit">
+      </form>
+
+</body>
+</html>
